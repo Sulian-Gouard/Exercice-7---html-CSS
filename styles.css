@@ -1,39 +1,29 @@
-
-
 #first {
-
-    background-color:#2574A9;
-    max-width: 60%;
+    background-color: #2574A9;
 
 }
+
 #first legend {
-
-    background-color:#2574A9;
+    background-color: #2574A9;
     max-width: 60%;
-
 }
 
 #second {
-
-    background-color:#9A12B3 ;
+    background-color: #9A12B3;
     max-width: 60%;
-
 }
+
 #second legend {
-
-    background-color:#9A12B3 ;
+    background-color: #9A12B3;
     max-width: 60%;
-
 }
+
 #third {
-
-    background-color:#DB0A5B ;
+    background-color: #DB0A5B;
     max-width: 60%;
-
 }
-#third legend{
 
-    background-color:#DB0A5B ;
+#third legend {
+    background-color: #DB0A5B;
     max-width: 60%;
-
 }

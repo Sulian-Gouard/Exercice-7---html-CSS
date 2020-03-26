@@ -2,74 +2,57 @@
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="utf-8">
     <title>Exercice 7</title>
 </head>
 
 <body>
     <form>
-    <fieldset id="first">
-        <Legend>Votre identité</Legend>
-        <ol>
-        <li>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" placeholder="Nom">
-        </li> 
-        <li>   
-            <label for="first_name">Prénom :</label>
-             <input type="text" id="first_name" placeholder="Prénom">
-        </li>
-        <li>
-            <label for="email">Adresse mail :</label>
-            <input type="text" id="email" placeholder="Adresse email">
-        </li>
-        </ol>  
-    </fieldset>
-    
-    <fieldset id="second">
-        <Legend>Votre adresse de livraison</Legend>
-        <ol>
-        <li>
-            <label for="adress">Adresse :</label>
-            <textarea id="adress" rows="5"></textarea>
-        </li> 
-        <li>   
-                <label for="postcode">Code postal :</label>
-                <input type="text" id="postcode" placeholder="Code postal">
-        </li>
-        <li>
-                <label for="city">Ville:</label>
-                <input type="text" id="city" placeholder="Ville">
-        </li>
-        </ol>
-    </fieldset>
-    <fieldset id="third">
-    <Legend>Informations de réglement</Legend>
-        <ol>
-        <li>
-            <label for="bank_card">Type de carte bancaire :</label> <br/>
-            <input type="radio" value="VISA" name="card"> VISA <br/>
-            <input type="radio" value="MasterCard" id="bank_card"> Mastercard
-        </li> 
-        <li>   
-                <label for="card_number">Numéro de carte :</label>
-                <input type="text" id="card_number" placeholder="Numéro de carte">
-        </li>
-        <li>
-                <label for="security_code">Code de sécurité :</label>
-                <input type="text" id="security_code" placeholder="Code de sécurité">
-        </li>
-        <li>
-                <label for="owner">Nom du titulaire :</label>
-                <input type="text" id="owner" placeholder="Nom du titulaire">
-        </li>
-        </ol>
-    </fieldset>
-    <div class="button">
-        <button type="submit">J'achète !</button>
-    </div>
+        <fieldset id="first">
+            <Legend>Votre identité</Legend>
+            <ol>
+                <li><label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Dupont" required></li>
+                <li><label for="first_name">Prénom :</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Marie" required></li>
+                <li><label for="mail">Adresse mail :</label>
+                    <input type="email" id="mail" name="mail" placeholder="marie.dupont@perso.com" required></li>
+            </ol>
+        </fieldset>
+
+        <fieldset id="second">
+            <Legend>Votre adresse de livraison</Legend>
+            <ol>
+                <li><label for="adress">Adresse :</label>
+                    <textarea name="adress" id="adress" rows="5" cols="25" required
+                        placeholder="Veuillez renseigner votre adresse." required></textarea></li>
+                <li><label for="postcode">Code postal :</label>
+                    <input type="text" id="postcode" name="postcode" placeholder="22000" required></li>
+                <li><label for="city">Ville:</label>
+                    <input type="text" id="city" name="city" placeholder="Saint-Brieuc" required></li>
+            </ol>
+        </fieldset>
+        <fieldset id="third">
+            <Legend>Informations de réglement</Legend>
+            <ol>
+                <li><label for="bank_card">Type de carte bancaire :</label> <br />
+                    <input type="radio" value="VISA" name="bank_card"> VISA <br />
+                    <input type="radio" value="MasterCard" name="bank_card" required> Mastercard</li>
+                <li><label for="card_number">Numéro de carte :</label>
+                    <input type="text" id="card_number" name="card_number" placeholder="8189 XXXX XXXX XXXX"
+                        minlength="12" maxlength="12" required></li>
+                <li><label for="security_code">Code de sécurité :</label>
+                    <input type="text" id="security_code" name="security_code" placeholder="xxxx" required></li>
+                <li><label for="owner">Nom du titulaire :</label>
+                    <input type="text" id="owner" name="owner" placeholder="Dupont" required></li>
+            </ol>
+        </fieldset>
+        <div class="button">
+            <button type="submit">J'achète !</button>
+        </div>
 
     </form>
 </body>
+
 </html>
